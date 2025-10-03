@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SolventLLE"
+version = "0.1.0"
+description = "A project for Solvent Liquid-Liquid Equilibrium calculations using SGTPy"
+authors = [
+    {name = "Elio Margiotta", email = "elio.margiotta25@imperial.ac.uk"},
+]
+dependencies = [
+    "SGTPy",
+    "numpy",
+    "scipy",
+    "cython",
+    "numba",
+    "pandas",
+    "openpyxl",
+]
+requires-python = ">=3.8"
+
+[tool.setuptools]
+packages = []  # Add packages if any
